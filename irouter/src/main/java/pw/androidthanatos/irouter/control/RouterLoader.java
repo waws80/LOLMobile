@@ -10,6 +10,7 @@ import android.widget.Toast;
 import java.util.List;
 
 import pw.androidthanatos.irouter.anotation.Alias;
+import pw.androidthanatos.irouter.utils.ClassType;
 import pw.androidthanatos.irouter.utils.ClassUtils;
 
 /**
@@ -100,7 +101,6 @@ public class RouterLoader {
         }
         for (Class<?> clazz:classList) {
             String value = bindType(clazz);
-            Log.w(TAG, "openByName:????? "+value+"          "+name );
             if (value.equals(name)){
                 targetClazz=clazz;
                 break;
@@ -111,8 +111,23 @@ public class RouterLoader {
         }else {
             Intent intent=new Intent(mContext,targetClazz);
             intent.putExtra("bundle",mBundle);
-            Activity activity= (Activity) mContext;
-            activity.startActivityForResult(intent,requestCode,mOptions);
+            ClassType.Type type = ClassType.checkClassType(targetClazz);
+            Log.w(TAG, "openByName: "+type );
+            switch (type){
+                case Activity:
+                    ((Activity) mContext).startActivityForResult(intent,requestCode,mOptions);
+                    break;
+                case Service:
+                    mContext.startService(intent);
+                    break;
+                case BroadcastReceiver:
+                    Toast.makeText(mContext, "不支持启动广播", Toast.LENGTH_SHORT).show();
+                    break;
+                case Obj:
+                    Toast.makeText(mContext, "不支持启动普通类", Toast.LENGTH_SHORT).show();
+                    break;
+            }
+
         }
 
 
