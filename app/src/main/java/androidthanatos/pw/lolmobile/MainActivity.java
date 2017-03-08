@@ -15,6 +15,8 @@ import pw.androidthanatos.irouter.anotation.Alias;
 import pw.androidthanatos.irouter.anotation.BindLayout;
 import pw.androidthanatos.irouter.anotation.BindView;
 import pw.androidthanatos.irouter.control.Interceptor;
+import pw.androidthanatos.irouter.utils.ClassRunning;
+import pw.androidthanatos.irouter.utils.ClassType;
 
 @BindLayout(R.layout.activity_main)
 @Alias("home")
@@ -50,19 +52,9 @@ public class MainActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
-        mTextMessage.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                IRouter.Builder.build(MainActivity.this).addInterrupter(new Interceptor() {
-                    @Override
-                    public boolean isInterrupter() {
-
-                        return false;
-                    }
-                }).openHref("lol://activity/androidthanatos.pw.lolmobile" +
-                        ".TestActivity");
-                finish();
-            }
+        mTextMessage.setOnClickListener((v)-> {
+                IRouter.Builder.build(MainActivity.this).addInterrupter(()->false).openName("test");
+               // finish();
         });
     }
 
