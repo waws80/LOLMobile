@@ -4,12 +4,25 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.TextView;
 
-public class MainActivity extends AppCompatActivity {
+import pw.androidthanatos.irouter.BaseActivity;
+import pw.androidthanatos.irouter.IRouter;
+import pw.androidthanatos.irouter.anotation.Alias;
+import pw.androidthanatos.irouter.anotation.BindLayout;
+import pw.androidthanatos.irouter.anotation.BindView;
+import pw.androidthanatos.irouter.control.Interceptor;
 
-    private TextView mTextMessage;
+@BindLayout(R.layout.activity_main)
+@Alias("home")
+public class MainActivity extends BaseActivity {
+    @BindView(R.id.message)
+    TextView mTextMessage;
+    @BindView(R.id.navigation)
+    BottomNavigationView navigation;
 
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
             = new BottomNavigationView.OnNavigationItemSelectedListener() {
@@ -32,14 +45,25 @@ public class MainActivity extends AppCompatActivity {
 
     };
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-
-        mTextMessage = (TextView) findViewById(R.id.message);
-        BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
+        mTextMessage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                IRouter.Builder.build(MainActivity.this).addInterrupter(new Interceptor() {
+                    @Override
+                    public boolean isInterrupter() {
+
+                        return false;
+                    }
+                }).openHref("lol://activity/androidthanatos.pw.lolmobile" +
+                        ".TestActivity");
+                finish();
+            }
+        });
     }
 
 }

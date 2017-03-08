@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/LOLMobile.iml" filepath="$PROJECT_DIR$/LOLMobile.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/irouter/irouter.iml" filepath="$PROJECT_DIR$/irouter/irouter.iml" />
     </modules>
   </component>
 </project>
