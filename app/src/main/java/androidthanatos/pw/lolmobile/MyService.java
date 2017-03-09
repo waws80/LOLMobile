@@ -6,8 +6,6 @@ import android.os.IBinder;
 import android.util.Log;
 
 import pw.androidthanatos.irouter.anotation.Alias;
-
-import static android.content.ContentValues.TAG;
 @Alias("service")
 public class MyService extends Service {
     private static final String TAG = "MyService";

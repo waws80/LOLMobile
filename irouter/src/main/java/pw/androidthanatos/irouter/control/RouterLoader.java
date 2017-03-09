@@ -12,6 +12,7 @@ import java.util.List;
 import pw.androidthanatos.irouter.anotation.Alias;
 import pw.androidthanatos.irouter.utils.ClassType;
 import pw.androidthanatos.irouter.utils.ClassUtils;
+import pw.androidthanatos.irouter.utils.ServiceRunning;
 
 /**
  * 处理路由框架信息
@@ -118,7 +119,12 @@ public class RouterLoader {
                     ((Activity) mContext).startActivityForResult(intent,requestCode,mOptions);
                     break;
                 case Service:
-                    mContext.startService(intent);
+                    if (ServiceRunning.isRunning(mContext,targetClazz)){
+                        Toast.makeText(mContext, "服务已经启动", Toast.LENGTH_SHORT).show();
+                    }else {
+                        mContext.startService(intent);
+                    }
+
                     break;
                 case BroadcastReceiver:
                     Toast.makeText(mContext, "不支持启动广播", Toast.LENGTH_SHORT).show();

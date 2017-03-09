@@ -4,6 +4,10 @@
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\202b06aa145d83856cd768898465c28be5256416\\output\\res\\drawable\\notification_icon_background.xml"
     },
     {
+        "merged": "C:\\Users\\Administrator\\Downloads\\LOLMobile\\irouter\\build\\intermediates\\res\\merged\\release\\drawable\\navigation_empty_icon.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\78d90b49678e15c8e7f7a6ed4e08d66d46285504\\output\\res\\drawable\\navigation_empty_icon.xml"
+    },
+    {
         "merged": "C:\\Users\\Administrator\\Downloads\\LOLMobile\\irouter\\build\\intermediates\\res\\merged\\release\\drawable\\abc_textfield_search_material.xml",
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\202b06aa145d83856cd768898465c28be5256416\\output\\res\\drawable\\abc_textfield_search_material.xml"
     },
@@ -20,8 +24,20 @@
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\202b06aa145d83856cd768898465c28be5256416\\output\\res\\drawable\\notification_bg.xml"
     },
     {
+        "merged": "C:\\Users\\Administrator\\Downloads\\LOLMobile\\irouter\\build\\intermediates\\res\\merged\\release\\drawable\\design_password_eye.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\78d90b49678e15c8e7f7a6ed4e08d66d46285504\\output\\res\\drawable\\design_password_eye.xml"
+    },
+    {
         "merged": "C:\\Users\\Administrator\\Downloads\\LOLMobile\\irouter\\build\\intermediates\\res\\merged\\release\\drawable\\abc_item_background_holo_dark.xml",
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\202b06aa145d83856cd768898465c28be5256416\\output\\res\\drawable\\abc_item_background_holo_dark.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Downloads\\LOLMobile\\irouter\\build\\intermediates\\res\\merged\\release\\drawable\\design_fab_background.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\78d90b49678e15c8e7f7a6ed4e08d66d46285504\\output\\res\\drawable\\design_fab_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Downloads\\LOLMobile\\irouter\\build\\intermediates\\res\\merged\\release\\drawable\\design_bottom_navigation_item_background.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\78d90b49678e15c8e7f7a6ed4e08d66d46285504\\output\\res\\drawable\\design_bottom_navigation_item_background.xml"
     },
     {
         "merged": "C:\\Users\\Administrator\\Downloads\\LOLMobile\\irouter\\build\\intermediates\\res\\merged\\release\\drawable\\abc_btn_colored_material.xml",
@@ -134,6 +150,10 @@
     {
         "merged": "C:\\Users\\Administrator\\Downloads\\LOLMobile\\irouter\\build\\intermediates\\res\\merged\\release\\drawable\\abc_list_selector_background_transition_holo_dark.xml",
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\202b06aa145d83856cd768898465c28be5256416\\output\\res\\drawable\\abc_list_selector_background_transition_holo_dark.xml"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Downloads\\LOLMobile\\irouter\\build\\intermediates\\res\\merged\\release\\drawable\\design_snackbar_background.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\78d90b49678e15c8e7f7a6ed4e08d66d46285504\\output\\res\\drawable\\design_snackbar_background.xml"
     },
     {
         "merged": "C:\\Users\\Administrator\\Downloads\\LOLMobile\\irouter\\build\\intermediates\\res\\merged\\release\\drawable\\abc_ic_arrow_drop_right_black_24dp.xml",

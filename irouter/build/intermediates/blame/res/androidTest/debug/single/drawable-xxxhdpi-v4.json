@@ -24,6 +24,10 @@
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\202b06aa145d83856cd768898465c28be5256416\\output\\res\\drawable-xxxhdpi-v4\\abc_btn_radio_to_on_mtrl_015.png"
     },
     {
+        "merged": "C:\\Users\\Administrator\\Downloads\\LOLMobile\\irouter\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xxxhdpi-v4\\design_ic_visibility.png",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\78d90b49678e15c8e7f7a6ed4e08d66d46285504\\output\\res\\drawable-xxxhdpi-v4\\design_ic_visibility.png"
+    },
+    {
         "merged": "C:\\Users\\Administrator\\Downloads\\LOLMobile\\irouter\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xxxhdpi-v4\\abc_switch_track_mtrl_alpha.9.png",
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\202b06aa145d83856cd768898465c28be5256416\\output\\res\\drawable-xxxhdpi-v4\\abc_switch_track_mtrl_alpha.9.png"
     },
@@ -90,6 +94,10 @@
     {
         "merged": "C:\\Users\\Administrator\\Downloads\\LOLMobile\\irouter\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xxxhdpi-v4\\abc_ic_menu_paste_mtrl_am_alpha.png",
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\202b06aa145d83856cd768898465c28be5256416\\output\\res\\drawable-xxxhdpi-v4\\abc_ic_menu_paste_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "C:\\Users\\Administrator\\Downloads\\LOLMobile\\irouter\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xxxhdpi-v4\\design_ic_visibility_off.png",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\78d90b49678e15c8e7f7a6ed4e08d66d46285504\\output\\res\\drawable-xxxhdpi-v4\\design_ic_visibility_off.png"
     },
     {
         "merged": "C:\\Users\\Administrator\\Downloads\\LOLMobile\\irouter\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-xxxhdpi-v4\\abc_scrubber_control_to_pressed_mtrl_005.png",
